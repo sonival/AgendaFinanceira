@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "../backend/financeV1"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.osx": {
+			"JAVA_HOME": "/usr/local/Cellar/openjdk@11/11.0.12",
+			"spring_profiles_active": "default",
+		},
+		"java.configuration.updateBuildConfiguration": "automatic"
+
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "java",
+				"name": "Launch Current File",
+				"request": "launch",
+				"mainClass": "${file}"
+			},
+			{
+				"type": "java",
+				"name": "Launch FinanceApplication",
+				"request": "launch",
+				"mainClass": "finance.demo.finance.FinanceApplication",
+				"projectName": "finance"
+			}
+		]
+	}
+}
