@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../backend/financeV1"
+		},
+		{
+			"path": "../front"
 		}
 	],
 	"settings": {
@@ -28,6 +31,12 @@
 				"mainClass": "finance.demo.finance.FinanceApplication",
 				"projectName": "finance"
 			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"vue.volar",
+			"humao.rest-client"
 		]
 	}
 }
