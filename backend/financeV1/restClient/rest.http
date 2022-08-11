@@ -1,4 +1,31 @@
 @local = http://localhost:8080
 @dev = http://localhost:8080
+@diaHoje = {{$datetime "DD/MM/YYYY" 0 y}}
 
 GET {{local}}/agendamento/transferencia/all
+
+###
+POST {{local}}/agendamento/transferencia/salvarAgendamento HTTP/1.1
+Content-Type: application/json
+
+{
+    "contaOrigem":"00001",
+    "contaDestino":"00002",
+    "tipoTransferencia":1,
+    "valor": 10.00,
+    "dataAgendamento": "{{diaHoje}}"
+
+}
+
+###
+POST {{local}}/agendamento/transferencia/salvarAgendamento HTTP/1.1
+Content-Type: application/json
+
+{
+    "contaOrigem":"00001",
+    "contaDestino":"00002",
+    "tipoTransferencia":0,
+    "valor": 890.00,
+    "dataAgendamento": "{{diaHoje}}"
+
+}

@@ -4,7 +4,9 @@ CREATE TABLE AGENDAMENTO_TRANSFERENCIA
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     contaorigem DOUBLE DEFAULT NULL,
     contadestino DOUBLE DEFAULT NULL,
+    tipotransacao INTEGER NULL,
     taxa DOUBLE DEFAULT NULL,
+    valor DOUBLE DEFAULT NULL,
     dataagendamento DATE NULL, 
     datatransferencia DATE NULL
 )
